@@ -1,0 +1,128 @@
+body {
+		background-color : #232323;
+		color : white;
+		margin : 0;
+		font-size : 20px;
+	}
+
+#loginbox {
+	background-color : #252525;
+	border : 4px solid white;
+	border-radius: 12px;
+	height: 510px;
+	width: 450px;
+	color : #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 16px;
+	overflow: auto;
+
+
+}
+#signupbox {
+	background-color : #252525;
+	border : 4px solid white;
+	border-radius: 12px;
+	height: 605px;
+	width: 450px;
+	color : #FFF;
+	font-family: Verdana, Geneva, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 16px;
+	overflow: auto;
+
+
+}
+#gologin {
+	
+	color : #FFF;
+	margin : 0px 45px;
+
+
+}
+#logininput{
+	
+	margin : 0px 0px 0px 0px;
+}
+
+#input-username{
+	border : 3px solid white;
+	border-radius: 4px;
+	height: 40px;
+	width: 80%;
+	color : white;
+	background-image:url(logdark.png);
+	font-size:20px;
+	margin :  30px 0px 0px;
+	
+}
+
+#input-password{
+	border : 3px solid white;
+	border-radius: 4px;
+	height: 40px;
+	width: 80%;
+	margin :  30px 0px 30px;
+	color : white;
+	background-image:url(logdark.png);
+	font-size:20px;
+}
+#input-nickname{
+	border : 3px solid white;
+	border-radius: 4px;
+	height: 40px;
+	width: 80%;
+	color : white;
+	background-image:url(logdark.png);
+	font-size:20px;
+}
+	
+#LOGO{
+		width : 50%;
+		margin-left : 25%;
+		margin-top : 10%;
+		
+	}
+	
+
+
+#loginbutton{
+	width : 100%;
+	margin : 0px, 0px;
+}
+
+.white_content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+	
+}
+.white_content:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+#start{
+	margin-top: 80px;
+	height : 160px;
+	
+	
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<title>CFR</title>
+<link rel="stylesheet" type="text/css" href="/views/gameover.css">
+</head>
+<body>
+<script href="/project.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+<div id="header" align ="center">
+
+<a href="/auth/login">
+<img id = "button_out" src="/views/logoutbutton.png">
+</a>
+<a href="/auth/play">
+<img id = "profile_logo" src="/views/logoforreplay.png">
+</a>
+<a href="/auth/login_success">
+<img id="button_profile" src="/views/profilebutton.png">
+</a>
+
+
+</div>
+<div id="result" align="center">
+
+<p style="font-size:60px">Your Final Score is</p>
+<span style="font-size:80px; color:#FF0">
+    <script>
+		temp=location.href.split("?");
+		data=temp[1];
+		document.write(data);
+		console.log('final score = '+data);
+        
+        var url = 'http://localhost:3004';
+        socket = io.connect(url);
+        socket.emit('send data', data);
+	</script>
+    
+    </span>
+	<div id="overlay"></div>
+	
+	<script type="text/javascript">		
+		function overlay_on(){
+	    	document.getElementById("overlay").style.display = "block";
+		}
+		function overlay_off(){
+			document.getElementById("overlay").style.display = "none";
+		}
+	overlay_on();
+	setTimeout("overlay_off();",1000);
+        
+	</script>
+	<p></p>
+    <a href="/auth/login_success">
+    <img style="border:2px solid white; border-radius:10px; height:100px; margin-top:30px" src="/views/Gothere.png">
+    </a>
+    <div >
+	
+    </div>
+    
+	
+</div>
+
+</body>
+</html>

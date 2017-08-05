@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>CFR</title>
+<link rel="stylesheet" type="text/css" href="/views/profilede.css">
+</head>
+<body>
+<script href="/project.js"></script>
+<div id="mid" align="center"> 
+<p style="font-size:60px;">Your Name : <%= displayName %></p>
+<script>
+var score = '<%= score %>';
+function changeimage() {
+   
+    var image = document.getElementById('mylevel');
+    if (score >= 87500) {
+        ry = 8;
+    }
+   else if (score >= 57000) 
+   {
+        ry = 7;
+    }
+   else if (score >= 34000) 
+   {
+        ry = 6;
+    }
+   else if (score >= 17500) 
+   {
+        ry = 5;
+    }
+   else if (score >= 6500) 
+   {
+        ry = 4;
+    }
+   else if (score >= 1000) 
+   {
+        ry = 3;
+    }
+   else if (score >= 500) 
+   {
+        ry = 2;
+    }
+   else {
+      ry = 1;
+   }
+   document.write('<img style="margin-bottom:-30px; margin-top:-50px; height:200px" src="/views/' + ry + '.png">');
+}
+ changeimage()
+</script>
+<p style="font-size:40px;">Best Score</p>
+<p style="font-size:50px"><span style="color:#FF0;"><%= score %></span>   |   <span style="color:#FF0;">Top <%= rank %>%</span></p>
+</div>
+<div id="header" align ="center" style="position:fixed">
+<a href="#">
+    <form action="/auth/logout">
+<input type="IMAGE" src="/views/logoutbutton.png" id ="button_out">
+    </form>
+</a>
+<a href="/auth/play">
+<img id = "profile_logo" src="/views/logoforother.png">
+</a>
+<a href="/auth/edit">
+<img id="button_edit" src="/views/edit.png">
+</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<title>CFR</title>
+<link rel="stylesheet" type="text/css" href="/views/editpage.css">
+</head>
+<body>
+    <form action="/auth/edit" method = "post">
+<div id="mid" align="center"> 
+<p style="font-size:60px; font-family:a어린왕자B;">Profile Edit</p>
+
+      <div align="center">
+        <p style="font-size:40px; font-family:a어린왕자B;"> ID : <%= username %></p>
+      </div>
+    
+      
+      <div align="center"><input type="text" id="input-nickname" name="displayName" placeholder=" Your name" class="required init_lang_en"/></div>
+      
+      <div align="center"><input type="password" id="input-password" name="password" placeholder=" Password" class="required init_lang_en"/></div>
+
+</div>
+        
+        <p style="text-align:center; font–family: ‘Nanum Gothic’; color:red; font-size:24px"> 이미 존재하는 닉네임 입니다. </p>
+    
+<div align="center">
+    <input type="IMAGE" id="buttons" src="/views/confirm.png" >
+    </div>
+    </form>
+    <div align="center">
+    <form action="/auth/login_success"><input type="IMAGE" id="buttons" src="/views/cancel.png" ></form>
+        </div>
+   
+<div id="header" align ="center" style="position:fixed">
+
+
+<img id = "profile_logo" src="/views/KakaoTalk_20170721_152718580.png">
+
+
+</div>
+
+    
+</body>
+</html>

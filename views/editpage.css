@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#232323;
+	color : white;
+}
+#header{
+
+	background-color:#151515;
+	height:6%;
+	margin :-8px;
+	border-bottom : 2px solid white;
+	font-family:"a어린왕자B";
+	color : white;
+	width : 100%;
+	position : fixed;
+	top : 8px;
+	
+}
+#profile_logo{
+	height : 310%;
+	margin : 1px;
+}
+#middlelogo{
+	height:100px;
+	width : 100px;
+}
+#Gothere{
+	height : 50%;
+	margin : 0px 0px 55px;
+}
+#mid{
+	background-color:#232323;
+	font-family:"a어린왕자B";
+	color : white;
+	margin-top: 180px;
+}
+
+
+
+#input-nickname{
+	border : 3px solid white;
+	border-radius: 4px;
+	height: 40px;
+	width: 360px;
+	color : white;
+	background-image:url(logdark.png);
+	font-size:20px;
+	
+}
+
+#input-password{
+	border : 3px solid white;
+	border-radius: 4px;
+	height: 40px;
+	width: 360px;
+	margin :  30px 0px 30px;
+	color : white;
+	background-image:url(logdark.png);
+	font-size:20px;
+}
+#input-username{
+	border : 3px solid white;
+	border-radius: 4px;
+	height: 40px;
+	width: 360px;
+	color : white;
+	background-image:url(logdark.png);
+	font-size:20px;
+}
+
+#buttons{
+	margin-top:30px;
+	margin-left:10px;
+	margin-right:10px;
+	width:170px;
+	
+	}

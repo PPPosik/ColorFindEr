@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#232323;
+}
+#header{
+	background-color:#151515;
+	height:6%;
+	margin :-8px;
+	border-bottom : 2px solid white;
+	font-family:"a어린왕자B";
+	color : white;
+	width : 100%;
+	position : absolute;
+	top : 8px;
+}
+#profile_logo{
+	height : 310%;
+	margin : 1px;
+}
+
+#Gothere{
+	height : 50%;
+	margin : 0px 0px 55px;
+}
+#playbutton{
+	margin-top:180px;
+}
+#button_profile{
+	position : absolute;
+	height : 98%;
+	right : 70%;
+}
+#button_out{
+	position : absolute;
+	height : 98%;
+	left : 70%;
+}
+
+

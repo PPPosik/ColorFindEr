@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CFR Login</title>
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+<link rel="stylesheet" type="text/css" href="/views/life.css">
+    <meta charset="utf-8">
+
+<!-- Optional theme -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
+
+</head>
+<body>
+<script type='text/javascript'>
+    location.href='#close';
+</script>
+
+<img id="LOGO" src="/views/KakaoTalk_20170721_152718822.png" ></img>
+
+
+<br>
+<div align="center">
+<div id="start" >
+<a href="#open"> <img src="/views/button.png" style="height:50%; border : 3px solid white;
+	border-radius: 4px;"> </a> 
+    <p></p>
+    <a href="#openup"> <img src="/views/buttonup.png" style="height:50%; border : 3px solid white;
+	border-radius: 4px;">  </a>
+</div>
+</div>
+    <div class="white_content" id="open">
+        <div id="loginbox">
+        <div align="center">
+        <img src="/views/KakaoTalk_20170721_152718580.png" style="height:90px; "></div>
+        	
+  <h2 align="center" class="login-title"> </h2>
+
+  <form action="/auth/login" method="post"  class="mform form-login" id="logininput" >
+                <div class="textform">
+      <div id ="logininput" align="center">
+        <input type="text" id="input-username" name="username" placeholder=" ID" value="" class="required init_lang_en" />
+        
+        
+      </div>
+          <div align="center"><input type="password" id="input-password" name="password" placeholder=" Password" class="required init_lang_en"/></div>
+
+    </div>
+    <div class="submitform"></div>
+  
+  <div id = "gologin" align="center">
+<!--<input type="submit" name="loginbutton" class="btn btn-success" value="로그인" />-->
+<input type="IMAGE" src="/views/button.png" id ="loginbutton"></img>
+<p><a href="#close"> <img src="/views/closebutton.png" style="height:20px; border : 3px ;
+	border-radius: 4px;"></a></p>
+</div>
+            </form>
+</div>
+            
+        </div>
+    </div>
+
+    <div class="white_content" id="openup">
+        <div id="signupbox">
+        <div align="center">
+        <img src="/views/signupmessage.png" style="height:185px; "></div>
+        	
+  
+
+  <form action="/auth/register" method="post" class="mform form-login" id="logininput" >
+                <div class="textform">
+                <div align="center"><input type="text" id="input-nickname" name="displayName" placeholder=" Your name" class="required init_lang_en"/></div>
+      <div id ="logininput" align="center">
+        <input type="text" id="input-username" name="username" placeholder=" ID" value="" class="required init_lang_en" />
+        
+        
+      </div>
+      
+          <div align="center"><input type="password" id="input-password" name="password" placeholder=" Password" class="required init_lang_en"/></div>
+          
+
+    </div>
+    <div class="submitform"></div>
+  
+  
+  <div id = "gologin" align="center">
+<!--<input type="submit" name="loginbutton" class="btn btn-success" value="로그인" />-->
+<input type="IMAGE" src="/views/buttonup.png" id ="loginbutton">
+<p><a href="#close"> <img src="/views/closebutton.png" style="height:20px; border : 3px ;
+	border-radius: 4px;"></a></p>
+</div>
+      </form>
+</div>
+        
+            
+        </div>
+    </div>
+
+<div class="white_content" id="openup_iderror">
+        <div id="signupbox">
+        <div align="center">
+            <image src="/views/signupmessage.png" style="height:160px; "></image>
+        </div>
+        	
+  
+
+  <form action="/auth/register" method="post"  class="mform form-login" id="logininput" >
+                <div class="textform">
+                <div align="center"><input type="text" id="input-nickname" name="displayName" placeholder=" Your name" class="required init_lang_en"/></div>
+      <div id ="logininput" align="center">
+        <input type="text" id="input-username" name="username" placeholder=" ID" value="" class="required init_lang_en" />
+        
+        
+      </div>
+      
+          <div align="center"><input type="password" id="input-password" name="password" placeholder=" Password" class="required init_lang_en"/></div>
+          
+
+    </div>
+    <div class="submitform"></div>
+  <p style="text-align:center; font–family: ‘Nanum Gothic’; color:red"> 이미 존재하는 아이디 입니다. </p>
+  
+  <div id = "gologin" align="center">
+<!--<input type="submit" name="loginbutton" class="btn btn-success" value="로그인" />-->
+<input type="IMAGE" id ="loginbutton" src="/views/buttonup.png" >
+<p><a href="#close"> <image src="/views/closebutton.png" style="height:20px; border : 3px ;
+	border-radius: 4px;"></img></a></p>
+</div>
+</form>
+</div>
+
+            
+        </div>
+    </div>
+
+<div class="white_content" id="openup_nameerror">
+        <div id="signupbox">
+        <div align="center">
+            <image src="/views/signupmessage.png" style="height:160px; "></image>
+       
+        </div>
+        	
+  
+
+  <form action="/auth/register" method="post"  class="mform form-login" id="logininput" >
+                <div class="textform">
+                <div align="center"><input type="text" id="input-nickname" name="displayName" placeholder=" Your name" class="required init_lang_en"/></div>
+      <div id ="logininput" align="center">
+        <input type="text" id="input-username" name="username" placeholder=" ID" value="" class="required init_lang_en" />
+        
+        
+      </div>
+      
+          <div align="center"><input type="password" id="input-password" name="password" placeholder=" Password" class="required init_lang_en"/></div>
+          
+
+    </div>
+    <div class="submitform"></div>
+  <p style="text-align:center; font–family: ‘Nanum Gothic’; color:red"> 이미 존재하는 닉네임 입니다. </p>
+  <div id = "gologin" align="center">
+<!--<input type="submit" name="loginbutton" class="btn btn-success" value="로그인" />-->
+<input type="IMAGE" id ="loginbutton" src="/views/buttonup.png" >
+<p><a href="#close"> <image src="/views/closebutton.png" style="height:20px; border : 3px ;
+    border-radius: 4px;"></image></a></p>
+</div>
+</div>
+    </form>
+            
+        </div>
+    </div>
+
+<div class="white_content" id="signup_success">
+        <div id="signupbox">
+        <div align="center">
+            <image src="/views/signupmessage.png" style="height:385px; margin-top:130px; "></image>
+        
+        </div>
+        	 
+  
+  <div id = "gologin" align="center">
+
+<p><a href="#close"> <image src="/views/closebutton.png" style="height:20px; border : 3px ;
+    border-radius: 4px;"></image></a></p>
+</div>
+</div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
